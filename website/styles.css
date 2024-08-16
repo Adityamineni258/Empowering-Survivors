@@ -1,0 +1,347 @@
+/* Background Image */
+.bg-image {
+  background-image: url('images/new1.jpg');
+  background-size: cover;
+  background-position: bottom;
+  margin-top: auto;
+  background-attachment: fixed;
+}
+/*Welcome-text*/
+.welcome-text{
+  color:#0b68c5;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #e8f0f8;
+  margin-bottom: auto;
+  opacity: 78%;
+  border-radius: 5px 5px;
+  padding-bottom: 50px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #007bff;
+  padding: 5px; /* Add padding to navbar */
+}
+
+.navbar-brand {
+  padding: 25px 25px; /* Adjusted padding */
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Your other navbar styles */
+}
+
+.navbar-toggler {
+  background: none;
+   border:  none;
+  cursor: pointer;
+  padding-bottom: 2rem ; /* Adjust as needed */
+}
+
+.icon {
+  width: 24px; /* Set the width of the icon */
+  height: auto; /* Maintain aspect ratio */
+  color:#fff;
+}
+
+.logo {
+  margin-right: 10px;
+  width: 60px; /* Adjusted width */
+  height: 60px; /* Adjusted height */
+}
+
+.navbar-nav {
+  margin-left: auto; /* Move navbar items to the right */
+}
+
+.ml-2 {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: xx-large;
+  font-style: oblique;
+}
+
+.ml-2:hover {
+  color: #f2ff00;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 5px; /* Add margin between navbar items */
+  padding: 10px 10px; /* Adjusted padding */
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-style: normal;
+  color: #ffffff;
+  border: 2px solid #007bff;
+  background-color: #007bff;
+  font-size: large;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #ffffff;
+  color: #007bff;
+  border-radius: 5px;
+}
+
+/* Sections */
+.section {
+  text-align: center;
+  padding: 100px 10px;
+  position: relative;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(199, 220, 7, 0.3);
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.section:hover::before {
+  opacity: 1;
+}
+
+/* Button */
+.glow-button {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glow-button:hover {
+  color: #fff;
+  border-color: #fff;
+  box-shadow: 0 0 10px 2px #ffffff;
+}
+
+/* Body and Footer */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.content-wrapper {
+  flex-grow: 1;
+  padding: 50px 0;
+}
+
+footer {
+  background-color: #343a40;
+  color: #083766;
+  padding-top: 20px;
+  cursor: pointer;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Adjustments for Text Container */
+.text-container {
+  color: #333;
+  /* Glass effect */
+  padding: 50px; /* Increased padding */
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  font-size: 18px; /* Increased text size */
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  cursor: pointer;
+}
+
+.container{
+  background-color: #fff;
+  text-align: center;
+  padding: 20px;
+    width: 80%; /* Set the width of the container */
+    max-width: 85000px; /* Optionally, set a maximum width to prevent it from becoming too wide */
+    margin: 0 auto; /* Center the container horizontally */
+}
+/* Reverting Feature Boxes to Original Color */
+.feature-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feature-left, .feature-right {
+  width: 48%;
+  padding: 20px;
+  background-color: #effb09; /* Reverted color */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease-in-out;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.feature-left:hover, .feature-right:hover {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature-left {
+  order: 1;
+}
+
+.feature-right {
+  order: 2;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .navbar-brand {
+    padding: 10px; /* Adjusted padding for mobile */
+  }
+
+  .logo {
+    width: 50px; /* Adjust logo size for mobile */
+    height: 50px; /* Adjust logo size for mobile */
+  }
+
+  .ml-2 {
+    font-size: large; /* Adjust font size for mobile */
+  }
+
+  .navbar-nav .nav-item {
+    padding: 5px; /* Adjust padding for mobile */
+    font-size: medium; /* Adjust font size for mobile */
+  }
+
+  .feature-left, .feature-right {
+    width: 100%; /* Full width for mobile */
+  }
+
+  .text-container {
+    padding: 20px; /* Adjust padding for mobile */
+    font-size: 16px; /* Adjust text size for mobile */
+  }
+
+  .section {
+    padding: 50px 10px; /* Adjust padding for mobile */
+  }
+
+  .glow-button {
+    font-size: 14px; /* Adjust button size for mobile */
+  }
+}
+@media (max-width: 768px) {
+  .text-container {
+      width: 90%; /* Adjust the width for smaller devices */
+  }
+}
+/*help section*/
+/* Specific styles for the help page */
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+h1, h2 {
+  text-align: center;
+}
+.helpline-section {
+  margin-bottom: 40px;
+}
+.helpline-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.helpline-table th, .helpline-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+.helpline-table th {
+  background-color: #343a40;
+  color: white;
+}
+.helpline-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+
+
+
+
+
+
+
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input, textarea, button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#ticketList ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#ticketList li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+#ticketList li:hover {
+  background-color: #f0f0f0;
+}
+
+#chatContainer {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+#chatList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#chatList li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
